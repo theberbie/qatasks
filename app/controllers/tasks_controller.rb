@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+  before_action :authenticate_user!, only:[:new, :create]
 
 def index
   @tasks = Task.all
@@ -9,10 +10,23 @@ def new
 end
 
 def create
-  Task.create(task_params)
+ current_user.tasks.create(task_params)
   redirect_to root_path
 
+end
 
+def show
+  @task = Task.find(params[:id])
+end
+
+def edit
+  @task = Task.find(params[:id])
+end
+
+def update
+  @task = Task.find(params[:id])
+  @task.update_attributes(task_params)
+  redirect_to root_path
 end
 
 private

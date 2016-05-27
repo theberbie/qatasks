@@ -1,0 +1,10 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+<h1><%= @task.item %> </h1>
+<i> <%= @task.game %> </i>
+<br />
+
+<p> <= @task.user.email %></p>
+<div class="pull-right">
+  <%= link_to 'Edit', edit_task_path(@task), class:'btn btn-primary'%>
+  </div>
+</div>
