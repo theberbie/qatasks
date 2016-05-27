@@ -1,3 +1,18 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+
 <h1> Today's LQA Tasks </h1>
-<p> <%=@task.item %> </p>
-<p><%= @task.game %> </p>
+<div>
+<% @tasks.each do |t| %>
+
+<ul>
+<li> <%= t.item %> </li>
+<li> <%= t.game %> </li>
+</ul>
+
+</div>
+
+<hr />
+
+<% end %>
+
+</div>
