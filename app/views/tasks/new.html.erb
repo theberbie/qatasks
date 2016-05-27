@@ -1,0 +1,11 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+
+<h1> Add a task </h1>
+<%= simple_form_for @task do |t| %>
+<%= t.input :item%>
+<%= t.input :game %>
+<br />
+<%=t.submit 'Create', class:'btn btn-primary'%>
+<%end%>
+
+</div>
