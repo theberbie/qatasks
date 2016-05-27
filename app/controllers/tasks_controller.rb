@@ -43,7 +43,7 @@ end
 
 def destroy
   @task = Task.find(params[:id])
-  if @place.user !=current_user
+  if @task.user !=current_user
     return render text: 'Not Allowed', status: :forbidden
   end
 
