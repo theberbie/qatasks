@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160527054948) do
+ActiveRecord::Schema.define(version: 20160527065807) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "tasks", force: true do |t|
-    t.string   "item"
     t.string   "game"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.text     "item"
   end
 
   add_index "tasks", ["user_id"], name: "index_tasks_on_user_id", using: :btree

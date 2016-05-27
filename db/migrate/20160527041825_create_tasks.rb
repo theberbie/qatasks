@@ -3,8 +3,9 @@ class CreateTasks < ActiveRecord::Migration
     create_table :tasks do |t|
       t.string :item
       t.string :game
-      
+
       t.timestamps
     end
+   
   end
 end

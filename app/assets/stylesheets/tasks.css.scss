@@ -16,7 +16,9 @@ body {
   margin-top:10px;
   margin-bottom:15px;
   padding:20px;
+  clear:both;
 }
+
 
 .booyah-box h1 {
   text-align:center;
@@ -39,4 +41,15 @@ body {
   font-weight: 600;
   letter-spacing: -0.3px;
 
+}
+
+.field_with_errors {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding:8px;
+}
+
+.clear {
+    clear: both;
 }
