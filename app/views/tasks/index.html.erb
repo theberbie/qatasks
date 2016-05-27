@@ -8,8 +8,10 @@
 <div class=" booyah-box col-xs-10 col-xs-offset-1">
 
 <h1> Today's LQA Task </h1>
-  <%= link_to task.item, task_path(task)%> 
+  <%= link_to 'Edit task', task_path(task)%> 
  
+  
+
       <p> <%= task.item %> </p> 
 
   <strong>Game</strong>: <p> <%= task.game %> </p>
