@@ -2,12 +2,14 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <title>LQA Tasks</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 
 <nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
@@ -56,6 +58,8 @@
 
 
  
+<p class="pull-right">
+<%= link_to 'New reminder', new_reminder_path%> <strong> Reminder: </strong> Happy hour at 5:30pm </p>
 
 
 <%= yield %>

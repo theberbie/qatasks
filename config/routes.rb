@@ -2,9 +2,9 @@ Qatasks::Application.routes.draw do
 
   devise_for :users
   root 'tasks#index'
-  resources :tasks
+  resources :tasks  
   resources :faqs
-  
+  resources :reminders
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

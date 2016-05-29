@@ -1,0 +1,12 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+
+  <h1> Add a reminder </h1>
+<p> Please limit reminder to 1 one line </p>
+  <%= simple_form_for @reminder do |reminder| %>
+  <%= reminder.input :event%>
+  <br />
+  <%= reminder.submit 'Create Reminder', class:'btn btn-info'%>
+
+  <% end %>
+
+</div>

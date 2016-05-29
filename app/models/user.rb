@@ -4,8 +4,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   validates_format_of :email, with: /\@kabaminc\.com/, message: 'You should have an email from Kabam'
-  has_many :tasks         
-
+  has_many :tasks   
+  has_many :faqs      
+  has_many :reminders
   
 
 end

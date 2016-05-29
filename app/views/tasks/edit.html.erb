@@ -2,7 +2,7 @@
 
 <h1> Add a task </h1>
 <%= simple_form_for @task do |t| %>
-<%= t.input :item%>
+<%= t.input :item,  as: :wysihtml5%>
 <%= t.input :game %>
 <br />
 <%=t.submit 'Update', class:'btn btn-primary'%>
