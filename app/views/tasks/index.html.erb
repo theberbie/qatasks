@@ -9,11 +9,16 @@
 
 <h1> Today's LQA Task </h1>
   <%= link_to 'Edit task', task_path(task)%> 
- 
-  
+  <ul>
+ <% if task.item.present? %>
+     <% task.split_items(task.item).each do |item| %>
 
-      <p> <%= task.item %> </p> 
+     <li> <%=item%> </li>
+<%end%>
+     <%end%> 
+    
 
+   </ul>
   <strong>Game</strong>: <p> <%= task.game %> </p>
   
 
