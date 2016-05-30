@@ -1,0 +1,14 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+<br />
+<li> <strong> <p><%= @faq.question.html_safe %> </strong> </p> </li>
+<i> <%= @faq.answer.html_safe%> </i>
+<br />
+
+
+<div class="pull-right">
+<% if current_user && current_user == @faq.user %>
+  <%= link_to 'Edit', edit_faq_path(@faq), class:'btn btn-primary glyphicon glyphicon-file'%>
+  <%end%>
+  <%= link_to 'Delete', faq_path(@faq), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger glyphicon glyphicon-trash' %>
+  </div>
+</div>

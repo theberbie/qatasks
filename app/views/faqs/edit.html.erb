@@ -1,7 +1,5 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
-<h1> Enter new FAQ </h1>
-
-<i> Note: For proper formatting, the questions automatically display as a list with a bold font and the answers are italic</i>
+<h1> Update FAQ </h1>
 
 
 
@@ -9,7 +7,7 @@
   <%= question.input :question, as: :wysihtml5 %>
   <%= question.input :answer, as: :wysihtml5 %> 
   <br />
-  <%= question.submit 'Create', class: 'btn btn-primary'%>
+  <%= question.submit 'Update', class: 'btn btn-primary'%>
 
   <%end%>
 

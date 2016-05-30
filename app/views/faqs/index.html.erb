@@ -6,10 +6,14 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
 <h1 class="text-center"> Hey Kabammer!</h1>
 
-<h2> Please do not hesitate to ask a lead if you have any questions. \n
-Below are some frequently asked questions that may answer a quick question. </h2>
+<h3> Please do not hesitate to ask a lead if you're stuck. Below are some frequently asked questions. </h3>
+
+
+<br />
+
 
 <ul>
+
 
   <li> <strong> Do I need to create a bug for every issue I see? </strong> </li>
   <i> The short answer is yes. We want our users to have a seamless experience. However, please make sure to check with your team via skype to make sure there are no duplicates.</i>
@@ -25,8 +29,11 @@ Below are some frequently asked questions that may answer a quick question. </h2
 
 
 <% @faq.each do |faq| %>
-<li> <strong> <%= faq.question.html_safe %> </li> </strong>
+
+<li> <strong>  <%= faq.question.html_safe %>  </strong> </li>
 <i> <%= faq.answer.html_safe %> </i>
+
+<%= link_to 'Edit Q&A', faq_path(faq)%> 
 <%end%>
 </div>
 
