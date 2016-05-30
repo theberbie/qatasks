@@ -1,5 +1,6 @@
 class Task < ActiveRecord::Base
   belongs_to :user
+  has_many :reminders
   validates :item, presence: true
   validates :game, presence: true
   

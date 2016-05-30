@@ -1,7 +1,8 @@
 class RemindersController < ApplicationController
 
 def index
-  @reminder = Reminder.all
+  @reminders = Reminder.all
+  @reminder = Reminder.last
 end
 
 def new 
@@ -9,9 +10,14 @@ def new
 end
 
 def create 
-  current_user.reminders.create(reminder_params)
+  @reminder.create(reminder_params)
   redirect_to root_path
 end
+
+def show
+ @reminder = Reminder.task(params[:id])
+end
+
 
 
 private
