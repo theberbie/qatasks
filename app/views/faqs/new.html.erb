@@ -1,6 +1,8 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
 <h1> Enter new FAQ </h1>
 
+<i> Note: Questions are automatically rendered as a list with a bold font, and answers are automatically formatted as italic </i>
+
 <%= simple_form_for @faq do |question| %>
   <%= question.input :question, as: :wysihtml5 %>
   <%= question.input :answer, as: :wysihtml5 %> 
