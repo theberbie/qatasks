@@ -18,6 +18,6 @@
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales
 //= require jquery_ujs
-//= require turbolinks
+
 //= require_tree .
 
