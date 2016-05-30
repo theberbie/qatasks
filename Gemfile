@@ -19,6 +19,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+gem 'turbolinks', '~> 5.0.0.beta'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
